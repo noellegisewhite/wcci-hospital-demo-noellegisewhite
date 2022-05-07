@@ -3,14 +3,14 @@ package project;
 public class Doctor {
 
     // Variables
-    private String employeeNumber;
+    private String doctorNumber;
     private String doctorName;
     private String doctorSpecial;
     private int doctorSalary;
 
     // Getters
-    public String getEmployeeNumber() {
-        return employeeNumber;
+    public String getDoctorNumber() {
+        return doctorNumber;
     }
 
     public String getDoctorName() {
@@ -26,8 +26,8 @@ public class Doctor {
     }
 
     // Constructor
-    public Doctor(String employeeNumber, String doctorName, String doctorSpecial) {
-        this.employeeNumber = employeeNumber;
+    public Doctor(String doctorNumber, String doctorName, String doctorSpecial) {
+        this.doctorNumber = doctorNumber;
         this.doctorName = doctorName;
         this.doctorSpecial = doctorSpecial;
     //    doctorSalary = 90000;

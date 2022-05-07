@@ -34,7 +34,7 @@ public class DoctorTest {
 //    }
 
     @Test
-    public void willReturnSalaryOf$90() {
+    public void willReturnDoctorSalaryOf90K() {
         int docSalary = doctorTest.calculateSalary();
         assertEquals(90000, docSalary);
     }
