@@ -1,20 +1,17 @@
 package project;
 
-public class Doctor {
+public class Doctor extends HospitalEmployee {
 
-    // Variables
-    private String doctorNumber;
-    private String doctorName;
     private String doctorSpecial;
     private int doctorSalary;
 
     // Getters
-    public String getDoctorNumber() {
-        return doctorNumber;
+    public String getEmployeeNumber() {
+        return employeeNumber;
     }
 
-    public String getDoctorName() {
-        return doctorName;
+    public String getEmployeeName() {
+        return employeeName;
     }
 
     public String getDoctorSpecial() {
@@ -26,9 +23,8 @@ public class Doctor {
     }
 
     // Constructor
-    public Doctor(String doctorNumber, String doctorName, String doctorSpecial) {
-        this.doctorNumber = doctorNumber;
-        this.doctorName = doctorName;
+    public Doctor(String employeeNumber, String employeeName, String doctorSpecial) {
+        super(employeeNumber, employeeName);
         this.doctorSpecial = doctorSpecial;
     //    doctorSalary = 90000;
     }
@@ -43,6 +39,7 @@ public class Doctor {
         newPatient.drawBlood(5);
     }
 
+    @Override
     public int calculateSalary() {
         return 90000;
     }

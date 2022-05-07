@@ -14,7 +14,7 @@ public class NurseTest {
     Patient patientTest = new Patient();
 
     @Test
-    public void willIncreasePatientHealthFrom10To20WhenNurseCare() {
+    public void willIncreasePatientHealthFrom10To30WhenNurseCare() {
         nurseTest.provideCare(patientTest);
         int healthLevel = patientTest.getPatientHealth();
         assertThat(healthLevel, is(30));
