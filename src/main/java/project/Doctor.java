@@ -1,7 +1,8 @@
 package project;
 
-public class Doctor extends HospitalEmployee {
+public class Doctor extends HospitalEmployee implements MedicalDuty {
 
+    // Variables
     private String doctorSpecial;
     private int doctorSalary;
 
@@ -30,11 +31,12 @@ public class Doctor extends HospitalEmployee {
     }
 
     // Methods
+    @Override
     public void provideCare(Patient newPatient) {
         newPatient.increaseHealth(10);
-
     }
 
+    @Override
     public void drawBlood(Patient newPatient) {
         newPatient.drawBlood(5);
     }

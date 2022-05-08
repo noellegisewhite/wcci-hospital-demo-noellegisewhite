@@ -5,6 +5,16 @@ public abstract class HospitalEmployee {
     protected String employeeNumber;
     protected String employeeName;
 
+    // Getters
+    public String getEmployeeNumber() {
+        return employeeNumber;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    // Constructor
     public HospitalEmployee(String employeeNumber, String employeeName) {
         this.employeeNumber = employeeNumber;
         this.employeeName = employeeName;
